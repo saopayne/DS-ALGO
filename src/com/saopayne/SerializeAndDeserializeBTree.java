@@ -35,9 +35,11 @@ public class SerializeAndDeserializeBTree {
     }
 
     private TreeNode deserializeHelper(Deque<String> strList){
+
         if (strList.size() == 0){
             return null;
         }
+
         String str = strList.pop();
         if (str.equals("null")) return null;
         TreeNode currentRoot = new TreeNode(Integer.parseInt(str));
