@@ -24,7 +24,7 @@ public class TopKFrequentElements {
             if (pq.size() > k) pq.poll();
         }
 
-        List<Integer> res = new LinkedList<>();
+        List<Integer> res = new LinkedList<Integer>();
         while(!pq.isEmpty()) {
             res.add(0, pq.poll().getKey());
         }
